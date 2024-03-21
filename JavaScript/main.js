@@ -61,4 +61,20 @@ const doubledNumbers = numbers.map(function(num) {
 
 console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 
+// Destructuring array
+
+const arr = [1,2,3,4,5];
+
+const [a,b,,c,...rest] = arr
+
+console.log(a,b,c,rest);
+
+// Destructuring Object
+
+const obj = [{"name":"Saurav","age":12},{"name":"Saurav","age":13}]
+
+const [{"age":age1},{"age":age2}] = obj
+
+console.log(age1,age2);
+
 
