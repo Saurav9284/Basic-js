@@ -77,4 +77,15 @@ const [{"age":age1},{"age":age2}] = obj
 
 console.log(age1,age2);
 
+null == undefined // False
+
+null === undefined // false
+
+//Asyncchronus,Synchoronus
+//Throtling,Debouncing,Closures,Promises
+//Call,Bind,Apply
+//Prototype Inheritance
+//map,forEach,forin,forof
+
+
 
