@@ -81,6 +81,22 @@ null == undefined // False
 
 null === undefined // false
 
+
+// Closures
+
+function outer(){
+   let greet = 'Hello World';
+    
+    function inner(){
+      console.log(greet);
+    }
+    return inner;
+}
+ 
+let closure = outer()
+ 
+closure(); // Output : Hello World
+
 //Asyncchronus,Synchoronus
 //Throtling,Debouncing,Closures,Promises
 //Call,Bind,Apply
