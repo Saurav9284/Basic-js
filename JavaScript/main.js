@@ -97,7 +97,37 @@ let closure = outer()
  
 closure(); // Output : Hello World
 
-//Asyncchronus,Synchoronus
+//Synchoronus
+
+
+function synchronousTask(name) {
+    console.log(`Start ${name}`);
+    console.log(`End ${name}`);
+}
+function main() {
+    console.log("Synchronous Program Execution:");
+    synchronousTask("Task 1");
+    synchronousTask("Task 2");
+    console.log("All tasks completed synchronously");
+}
+main();
+
+// Asynchronous
+
+function asynchronousTask(name) {
+    console.log(`Start ${name}`);
+    setTimeout(() => {
+        console.log(`End ${name}`);
+    }, 2000);
+}
+function main() {
+    console.log("Asynchronous Program Execution:");
+    asynchronousTask("Task 1");
+    asynchronousTask("Task 2");
+    console.log("All tasks initiated asynchronously");
+}
+main();
+
 //Throtling,Debouncing,Closures,Promises
 //Call,Bind,Apply
 //Prototype Inheritance
