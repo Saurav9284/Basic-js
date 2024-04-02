@@ -71,11 +71,15 @@ console.log(a,b,c,rest);
 
 // Destructuring Object
 
-const obj = [{"name":"Saurav","age":12},{"name":"Saurav","age":13}]
+const obj = [{"name":"Saurav","age":12},{"name":"Saurav","age":13}];
 
-const [{"age":age1},{"age":age2}] = obj
+const [{"age":age1},{"age":age2}] = obj;
 
-console.log(age1,age2);
+// Updating ages
+age1 = 20;
+age2 = 21;
+
+console.log(age1, age2);
 
 null == undefined // False
 
