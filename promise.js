@@ -1,3 +1,19 @@
+// Creating a Promise
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Promise resolved after 2 seconds");
+  }, 2000);
+});
+
+// Using the Promise
+myPromise.then((result) => {
+  console.log(result); 
+}).catch((error) => {
+  console.error(error); 
+});
+
+
+
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Success!');
