@@ -136,6 +136,7 @@ main();
 //Call,Bind,Apply
 //Prototype Inheritance
 //map,forEach,forin,forof
+// 
 
 
 
